@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <H1>Inserindos vídeos hospedados localmente.</H1>
+
+    <p>Este vídeo está hospedado no meu própio servidor. MP4 </p>
+
+    <video src="midia/meu-video.mp4.mp4" width="200" controls></video>
+
+    
+    <p>Este vídeo é em M4V </p>
+
+    <video src="midia/Meu-Video.m4v.m4v" width="200" controls></video>
+
+    <p>Este vídeo é em WEBM </p>
+
+    <video src="midia/Meu-Video.webn.webm" width="200" controls></video>
+
+
+    <p>Este vídeo é em OGV </p>
+
+    <video src="midia/meu-video.ogv.ogv" width="200" controls></video>
+
+    <H1>Forma correta de fazer.</H1>
+
+    <p>Como você vai usar na pagina</p>
+
+    <video width="250" poster="imagens/robotica.png" controls>
+  
+   <source src="midia/Meu-Video.m4v.m4v" type="video/m4v">
+   <source src="midia/Meu-Video.webn.webm" type="video/webm">
+   <source src="midia/meu-video.mp4.mp4" type="video/mp4">
+   <source src="midia/meu-video.ogv.ogv" type="video/ogv">
+
+    </video>
+
+    <h1>Inserindo videos do YouTube</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IHk3vyv9d3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo videos do Vimeo</h1>
+
+    <iframe src="https://player.vimeo.com/video/202918211?h=f29553de82&color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+    
+</body>
+</html>
