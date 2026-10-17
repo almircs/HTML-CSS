@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercícios do curso de HTML5 e CSS3 do Curso em Vídeo, feitos por Carlos Almir.">
+    <title>HTML5 e CSS3 — Exercícios</title>
+    <style>
+        :root {
+            --fundo: #f4f6fb;
+            --cartao: #ffffff;
+            --texto: #1d2433;
+            --suave: #5b6476;
+            --destaque: #4478e3;
+            --borda: #dde2ee;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --fundo: #11151c;
+                --cartao: #1a2029;
+                --texto: #e8ecf3;
+                --suave: #9aa3b5;
+                --destaque: #7aa2f7;
+                --borda: #2a3240;
+            }
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            background: var(--fundo);
+            color: var(--texto);
+            line-height: 1.5;
+        }
+
+        header, main, footer {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        header { padding-top: 48px; padding-bottom: 24px; }
+        h1 { margin: 0 0 8px; font-size: clamp(1.8rem, 5vw, 2.6rem); }
+        header p { margin: 0; color: var(--suave); }
+
+        h2 {
+            font-size: 1.1rem;
+            margin: 32px 0 12px;
+            color: var(--suave);
+            text-transform: uppercase;
+            letter-spacing: .06em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 12px;
+        }
+
+        a.cartao {
+            display: block;
+            height: 100%;
+            padding: 14px 16px;
+            background: var(--cartao);
+            border: 1px solid var(--borda);
+            border-radius: 10px;
+            color: inherit;
+            text-decoration: none;
+            transition: border-color .15s, transform .15s;
+        }
+
+        a.cartao:hover, a.cartao:focus-visible {
+            border-color: var(--destaque);
+            transform: translateY(-2px);
+            outline: none;
+        }
+
+        .numero { font-size: .8rem; color: var(--destaque); font-weight: 600; }
+        .titulo { display: block; font-weight: 600; }
+
+        footer { padding-top: 40px; padding-bottom: 40px; color: var(--suave); font-size: .9rem; }
+        footer a { color: var(--destaque); }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML5 e CSS3</h1>
+        <p>Exercícios do curso de HTML5 e CSS3 do Curso em Vídeo, do primeiro parágrafo aos seletores personalizados.</p>
+    </header>
+
+    <main>
+        <h2>HTML</h2>
+        <ul>
+            <li><a class="cartao" href="exercicios/ex001/index.html"><span class="numero">ex001</span><span class="titulo">Meu primeiro exercício</span></a></li>
+            <li><a class="cartao" href="exercicios/ex002/index.html"><span class="numero">ex002</span><span class="titulo">Parágrafos</span></a></li>
+            <li><a class="cartao" href="exercicios/ex003/index.html"><span class="numero">ex003</span><span class="titulo">Imagens</span></a></li>
+            <li><a class="cartao" href="exercicios/ex004/index.html"><span class="numero">ex004</span><span class="titulo">Favicon</span></a></li>
+            <li><a class="cartao" href="exercicios/ex006/index.html"><span class="numero">ex006</span><span class="titulo">Hierarquia de títulos</span></a></li>
+            <li><a class="cartao" href="exercicios/ex006a/index.html"><span class="numero">ex006a</span><span class="titulo">Títulos — exercício</span></a></li>
+            <li><a class="cartao" href="exercicios/ex007/html4.html"><span class="numero">ex007</span><span class="titulo">Um site em HTML4</span></a></li>
+            <li><a class="cartao" href="exercicios/ex008/index.html"><span class="numero">ex008</span><span class="titulo">Formatação de textos</span></a></li>
+            <li><a class="cartao" href="exercicios/ex008b/index.html"><span class="numero">ex008b</span><span class="titulo">Outras formatações</span></a></li>
+            <li><a class="cartao" href="exercicios/ex009/index.html"><span class="numero">ex009</span><span class="titulo">Listas</span></a></li>
+            <li><a class="cartao" href="exercicios/ex010/index.html"><span class="numero">ex010</span><span class="titulo">Trabalhando com links</span></a></li>
+            <li><a class="cartao" href="exercicios/ex010a/index.html"><span class="numero">ex010a</span><span class="titulo">Redes sociais</span></a></li>
+            <li><a class="cartao" href="exercicios/ex010ex/index.html"><span class="numero">ex010ex</span><span class="titulo">Links — exercício</span></a></li>
+            <li><a class="cartao" href="exercicios/ex011/index.html"><span class="numero">ex011</span><span class="titulo">Mídias em HTML5</span></a></li>
+            <li><a class="cartao" href="exercicios/ex011b/index.html"><span class="numero">ex011b</span><span class="titulo">Vídeos com HTML5</span></a></li>
+            <li><a class="cartao" href="exercicios/ex011ex/index.html"><span class="numero">ex011ex</span><span class="titulo">Mídias — exercício</span></a></li>
+        </ul>
+
+        <h2>CSS</h2>
+        <ul>
+            <li><a class="cartao" href="exercicios/ex013/index.html"><span class="numero">ex013</span><span class="titulo">Estilos inline</span></a></li>
+            <li><a class="cartao" href="exercicios/ex014/index.html"><span class="numero">ex014</span><span class="titulo">Estilos internos</span></a></li>
+            <li><a class="cartao" href="exercicios/ex015/index.html"><span class="numero">ex015</span><span class="titulo">Estilos externos</span></a></li>
+            <li><a class="cartao" href="exercicios/ex016/cor01.html"><span class="numero">ex016</span><span class="titulo">Cores em CSS</span></a></li>
+            <li><a class="cartao" href="exercicios/ex017/fonte01.html"><span class="numero">ex017</span><span class="titulo">Fontes em CSS</span></a></li>
+            <li><a class="cartao" href="exercicios/ex018/fonte01.html"><span class="numero">ex018</span><span class="titulo">Google Fonts</span></a></li>
+            <li><a class="cartao" href="exercicios/ex019/index.html"><span class="numero">ex019</span><span class="titulo">Seletores personalizados</span></a></li>
+        </ul>
+    </main>
+
+    <footer>
+        Feito por <a href="https://github.com/almircs">Carlos Almir</a> · Curso de <a href="https://www.cursoemvideo.com/">HTML5 e CSS3 do Curso em Vídeo</a>
+    </footer>
+</body>
+</html>
